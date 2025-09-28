@@ -42,9 +42,7 @@ The solution follows a standard, rigorous data science pipeline, addressing all 
 ### Running the Script
 
 1.  Navigate to the project directory.
-2.  Execute the main script:
-    bash
-    python your_task5_script_name.py
+2.  Execute the project
     
 
 The script will automatically handle NLTK data downloads, display three analytical visualizations, and print the final evaluation report to the console.
