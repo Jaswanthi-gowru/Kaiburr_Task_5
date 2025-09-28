@@ -77,7 +77,7 @@ Installation
 
 Clone this repository:
 
-git clone https://github.com/yourusername/Waste_Classification.git
+
 
 
 Install dependencies:
