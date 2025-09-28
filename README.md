@@ -1,88 +1,51 @@
-Consumer Complaint Text Classification:
+# 📚 Task 5: Consumer Complaint Text Classification
 
-This project focuses on automatically classifying consumer complaints into four categories:
+[![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)](https://www.python.org/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-FF9800?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/stable/)
+[![NLTK](https://img.shields.io/badge/NLTK-209E9F?style=for-the-badge&logo=nltk&logoColor=white)](https://www.nltk.org/)
+[![MongoDB](https://img.shields.io/badge/Data-Consumer%20Complaints-informational?style=for-the-badge)](https://catalog.data.gov/dataset/consumer-complaint-database)
 
-1.Credit reporting, repair, or other
+This repository contains the complete solution for the Kaiburr Assessment Data Science Task, focused on building a robust Multi-Class Text Classification model.
 
-2.Debt collection
+## 🎯 Project Goal
 
-3.Consumer Loan
+The objective is to accurately classify raw consumer complaints into one of four specific financial product categories using NLP and machine learning:
 
-4.Mortgage
+| ID | Category Name |
+| :---: | :--- |
+| *0* | Credit reporting, repair, or other |
+| *1* | Debt collection |
+| *2* | Consumer Loan |
+| *3* | Mortgage |
 
-Using the Consumer Complaint Database the goal is to streamline complaint handling, improve customer support, and gain insights from large volumes of consumer feedback.
+***
 
-Features:
+## 🛠 Execution and Analysis Flow
 
-1.End-to-end text classification pipeline
+The solution follows a standard, rigorous data science pipeline, addressing all task requirements sequentially.
 
-2.Data preprocessing with cleaning, tokenization, stopword removal, and lemmatization
+| Stage | Key Processes | Output |
+| :--- | :--- | :--- |
+| *1. Data Preparation (EDA)* | Filtering, cleaning, and duplicate removal. *Visualize Class Distribution* and *Text Length* statistics. | Filtered DataFrame, Two EDA Charts |
+| *2. Feature Engineering* | Text cleaning, *Lemmatization, and Stopword removal. Text converted to vectors using **TF-IDF*. | Processed Narratives, Feature Matrix |
+| *3. Modeling & Training* | Using a Scikit-learn Pipeline to chain preprocessing and a *Logistic Regression* classifier. | Trained Model Pipeline |
+| *4. Evaluation & Prediction* | Calculation of Accuracy, Precision, Recall, and F1-score. Generation of the *Confusion Matrix*. | Evaluation Report, Predictions |
 
-3.Feature extraction using TF-IDF vectorization
+***
 
-Model training with three machine learning algorithms:
+## 🚀 How to Run the Project
 
-1.Logistic Regression
+### Prerequisites
+1.  *Dependencies:* Install all required libraries: pip install pandas numpy scikit-learn matplotlib seaborn nltk
+2.  *Dataset:* Ensure the file **consumer_complaints.csv** is downloaded from the source and placed in the project root directory.
 
-2.Multinomial Naïve Bayes
+### Running the Script
 
-3.Linear SVM
+1.  Navigate to the project directory.
+2.  Execute the main script:
+    bash
+    python your_task5_script_name.py
+    
 
-Real-time prediction of complaint categories
-
-Visualization of complaint distributions and confusion matrices
-
-Workflow:
-
-1.Exploratory Data Analysis (EDA)
-
-2.Filtering relevant data, removing null entries
-
-3.Sampling 10,000 complaints for faster experimentation
-
-4.Visualizing complaint distribution and text lengths
-
-5.Text Preprocessing
-
-6.Lowercasing, removing non-alphanumeric characters
-
-7.Tokenization and stopword removal
-
-8.Lemmatization
-
-9.Feature Engineering
-
-10.Converting text into numerical features using TF-IDF
-
-11.Model Training & Selection
-
-12.Train Logistic Regression, Naïve Bayes, and Linear SVM
-
-13.Evaluate using accuracy, precision, recall, and F1-score
-
-14.Model Evaluation
-
-15.Analyze performance with confusion matrices
-
-16.Compare accuracies of all three models
-
-17.Prediction
-
-18.Preprocess and vectorize new complaints
-
-19.Predict category using the trained model
-
-20.Installation
-
-Clone this repository:
-
-https://github.com/Jaswanthi-gowru/Kaiburr_Task_5
-
-Results:
-
-Logistic Regression achieved the best accuracy
-
-Confusion matrices help understand misclassifications
-
-TF-IDF features combined with preprocessing improve model performance
+The script will automatically handle NLTK data downloads, display three analytical visualizations, and print the final evaluation report to the console.
 
