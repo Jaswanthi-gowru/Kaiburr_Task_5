@@ -1,111 +1,84 @@
-Consumer Complaint Text Classification
+Consumer Complaint Text Classification:
 
 This project focuses on automatically classifying consumer complaints into four categories:
 
-Credit reporting, repair, or other
+1.Credit reporting, repair, or other
 
-Debt collection
+2.Debt collection
 
-Consumer Loan
+3.Consumer Loan
 
-Mortgage
+4.Mortgage
 
-Using the Consumer Complaint Database
- from the U.S. Consumer Financial Protection Bureau (CFPB), the goal is to streamline complaint handling, improve customer support, and gain insights from large volumes of consumer feedback.
+Using the Consumer Complaint Database the goal is to streamline complaint handling, improve customer support, and gain insights from large volumes of consumer feedback.
 
-Features
+Features:
 
-End-to-end text classification pipeline
+1.End-to-end text classification pipeline
 
-Data preprocessing with cleaning, tokenization, stopword removal, and lemmatization
+2.Data preprocessing with cleaning, tokenization, stopword removal, and lemmatization
 
-Feature extraction using TF-IDF vectorization
+3.Feature extraction using TF-IDF vectorization
 
 Model training with three machine learning algorithms:
 
-Logistic Regression
+1.Logistic Regression
 
-Multinomial Naïve Bayes
+2.Multinomial Naïve Bayes
 
-Linear SVM
+3.Linear SVM
 
 Real-time prediction of complaint categories
 
 Visualization of complaint distributions and confusion matrices
 
-Workflow
+Workflow:
 
-Exploratory Data Analysis (EDA)
+1.Exploratory Data Analysis (EDA)
 
-Filtering relevant data, removing null entries
+2.Filtering relevant data, removing null entries
 
-Sampling 10,000 complaints for faster experimentation
+3.Sampling 10,000 complaints for faster experimentation
 
-Visualizing complaint distribution and text lengths
+4.Visualizing complaint distribution and text lengths
 
-Text Preprocessing
+5.Text Preprocessing
 
-Lowercasing, removing non-alphanumeric characters
+6.Lowercasing, removing non-alphanumeric characters
 
-Tokenization and stopword removal
+7.Tokenization and stopword removal
 
-Lemmatization
+8.Lemmatization
 
-Feature Engineering
+9.Feature Engineering
 
-Converting text into numerical features using TF-IDF
+10.Converting text into numerical features using TF-IDF
 
-Model Training & Selection
+11.Model Training & Selection
 
-Train Logistic Regression, Naïve Bayes, and Linear SVM
+12.Train Logistic Regression, Naïve Bayes, and Linear SVM
 
-Evaluate using accuracy, precision, recall, and F1-score
+13.Evaluate using accuracy, precision, recall, and F1-score
 
-Model Evaluation
+14.Model Evaluation
 
-Analyze performance with confusion matrices
+15.Analyze performance with confusion matrices
 
-Compare accuracies of all three models
+16.Compare accuracies of all three models
 
-Prediction
+17.Prediction
 
-Preprocess and vectorize new complaints
+18.Preprocess and vectorize new complaints
 
-Predict category using the trained model
+19.Predict category using the trained model
 
-Installation
+20.Installation
 
 Clone this repository:
 
+https://github.com/Jaswanthi-gowru/Kaiburr_Task_5
 
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Download the Consumer Complaint Database CSV and update the file path in the notebook or script.
-
-Usage
-
-Run the Python script or Jupyter notebook to:
-
-Explore the dataset
-
-Train models
-
-Evaluate performance
-
-Make real-time predictions
-
-Example:
-
-user_input = input("Enter a consumer complaint: ")
-predicted_category = predict_complaint(user_input)
-print("Predicted Category:", predicted_category)
-
-Results
+Results:
 
 Logistic Regression achieved the best accuracy
 
